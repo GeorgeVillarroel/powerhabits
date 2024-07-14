@@ -1,0 +1,49 @@
+* {
+    outline: 1px solid #000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(to bottom,#BCBCFC, #F2D4E9);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-img {
+background-image: url(../assets/img/mainlogo.png);
+width: 1024px;
+height: 266px;
+transform: scale(0.4)
+}
+
+@media screen and (min-width: 576px) {
+    .title-img {
+        transform: scale(0.5);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .title-img {
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .title-img {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+}
