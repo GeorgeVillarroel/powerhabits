@@ -8,7 +8,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: visible;
     font-family: dinomiko, sans-serif;
     font-size: 1.0em;
     font-weight: 600;
@@ -124,11 +124,100 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1em;
+    z-index: 3;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    width: 400px;
+    z-index: 3;
+}
+
+.user-input, .password-input {
+    border: 15px 15px #000;
+    box-shadow: 1px 1px #000,
+                -1px -1px #000;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 15px;
+    z-index: 3;
+}
+
+.user-label {
+    z-index: 3;
+}
+
+.buttons {
+    display: flex;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 400px;
+}
+
+.button {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-family: dinomiko, sans-serif;
+    text-shadow: 2px 2px #000;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    width: 50%;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: 6px 6px #000;
+    overflow: visible;
+    transform: translate(1px, 1px);
+    transition: box-shadow .3s ease ;
+    z-index: 3;
+}
+
+.button:hover {
+    position: relative;
+    box-shadow: none;
+    transform: translate(0, 0);
+}
+
+.button:active {
+    background-color: #ffdeda;
+    outline: 0;
+    z-index: 3;
+}
+
+.button:hover {
+    outline: 0;
     z-index: 3;
 }
 
 footer {
     z-index: 3;
+}
+
+@media (min-width: 768px) {
+    .button-56 {
+        padding: 0 40px;
+    }
 }
 
 @media screen and (min-width: 576px) {
