@@ -1,10 +1,18 @@
+@font-face {
+    font-family: dinomiko;
+    src: url(../assets/fonts/dinomiko.otf);
+}
+
 * {
-    outline: 1px solid #000;
+    /* outline: 1px solid #000; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     overflow: hidden;
+    font-family: dinomiko, sans-serif;
+    font-size: 1.0em;
+    font-weight: 600;
+    z-index: 1;
 }
 
 body {
@@ -13,15 +21,114 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    z-index: 1;
+}
+
+.background-wrap {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    background-color: #ffffff1a;
+}
+
+.background-wrap div{
+    position: absolute;
+    z-index: 2;
+}
+
+.background-wrap div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: transf-opacity 10s linear infinite;
+}
+
+.background-wrap div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: transf-opacity 7s linear infinite;
+}
+
+.background-wrap div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: transf-opacity 9s linear infinite;
+}
+
+.background-wrap div:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: transf-opacity 10s linear infinite;
+}
+
+.background-wrap div:nth-child(5) {
+    top: 67%;
+    left: 10%;
+    animation: transf-opacity 6s linear infinite;
+}
+
+.background-wrap div:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: transf-opacity 12s linear infinite;
+}
+
+.background-wrap div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: transf-opacity 15s linear infinite;
+}
+
+.background-wrap div:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: transf-opacity 16s linear infinite;
+}
+
+.background-wrap div:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: transf-opacity 9s linear infinite;
+}
+
+.background-wrap div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: transf-opacity 5s linear infinite;
+}
+
+.star svg {
+    width: 3em;
+    height: 3em;
+    color: white;
+    text-shadow: 1px 0 #000;
 }
 
 .title-img {
-background-image: url(../assets/img/mainlogo.png);
-width: 1024px;
-height: 266px;
-transform: scale(0.4)
+    background-image: url(../assets/img/mainlogo.png);
+    width: 1024px;
+    height: 266px;
+    transform: scale(0.4);
+    z-index: 3;
+}
+
+.content {
+    width: 90vw;
+    height: 60vh;
+    background-color: #f3f3f3;
+    outline: solid 4px #313131cc;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+footer {
+    z-index: 3;
 }
 
 @media screen and (min-width: 576px) {
@@ -40,10 +147,31 @@ transform: scale(0.4)
     .title-img {
         transform: scale(1);
     }
+
+    .content {
+        width: 70vw;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    .content {
+        width: 800px;
+    }
 }
 
 @media screen and (min-width: 1400px) {
+    .content {
+        width: 900px;
+    }
+}
+
+@keyframes transf-opacity {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.3) translateY(-50px) rotate(180deg);
+        opacity: 0;
+    }
 }
