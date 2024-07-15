@@ -117,8 +117,8 @@ body {
 .content {
     width: 90vw;
     height: 60vh;
-    background-color: #f3f3f3;
-    outline: solid 4px #313131cc;
+    background-color: rgba(255, 255, 255, 0.404);
+    border: solid 4px #313131cc;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
