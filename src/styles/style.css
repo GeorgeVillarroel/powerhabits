@@ -99,6 +99,66 @@ body {
     animation: transf-opacity 5s linear infinite;
 }
 
+.background-wrap div:nth-child(11) {
+    top: 15%;
+    left: 20%;
+    animation: transf-opacity 3s linear infinite;
+}
+
+.background-wrap div:nth-child(12) {
+    top: 80%;
+    left: 40%;
+    animation: transf-opacity 4s linear infinite;
+}
+
+.background-wrap div:nth-child(13) {
+    top: 50%;
+    left: 60%;
+    animation: transf-opacity 5s linear infinite;
+}
+
+.background-wrap div:nth-child(14) {
+    top: 90%;
+    left: 80%;
+    animation: transf-opacity 6s linear infinite;
+}
+
+.background-wrap div:nth-child(15) {
+    top: 50%;
+    left: 30%;
+    animation: transf-opacity 7s linear infinite;
+}
+
+.background-wrap div:nth-child(16) {
+    top: 40%;
+    left: 50%;
+    animation: transf-opacity 8s linear infinite;
+}
+
+.background-wrap div:nth-child(17) {
+    top: 50%;
+    left: 70%;
+    animation: transf-opacity 9s linear infinite;
+}
+
+.background-wrap div:nth-child(18) {
+    top: 30%;
+    left: 90%;
+    animation: transf-opacity 10s linear infinite;
+}
+
+.background-wrap div:nth-child(19) {
+    top: 40%;
+    left: 10%;
+    animation: transf-opacity 11s linear infinite;
+}
+
+.background-wrap div:nth-child(20) {
+    top: 70%;
+    left: 95%;
+    animation: transf-opacity 12s linear infinite;
+}
+
 .star svg {
     width: 3em;
     height: 3em;
