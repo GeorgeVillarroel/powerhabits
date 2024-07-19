@@ -10,10 +10,8 @@
 
     <title>Powerhabits</title>
 
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/signup.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="index.js" defer></script>
-
 </head>
 
 <body>
@@ -121,15 +119,17 @@
     </div>
     <header class="title-img"></header>
     <main class="content">
-        <h1 class="login-title">Iniciar Sesion</h1>
-        <form class="login-form" autocomplete="off">
+        <h1 class="signup-title">Registrarse</h1>
+        <form class="signup-form" autocomplete="off">
             <label for="user" class="user-label">Nombre de usuario:</label>
             <input type="text" name="user" class="user-input">
             <label for="password" class="password-label">Contraseña:</label>
-            <input type="text" name="password" class="password-input">
+            <input type="password" name="password" class="password-input">
+            <label for="email" class="email-label">Email:</label>
+            <input type="email" name="email" class="email-input">
 
         </form>
-        <h2 class="forgot-pw">¿Olvidaste tu contraseña o nombre de usuario?</h2>
+        <h2 class="input-validation">¿Olvidaste tu contraseña o nombre de usuario?</h2>
         <aside class="buttons">
             <div class="button login">
                 Iniciar Sesion
