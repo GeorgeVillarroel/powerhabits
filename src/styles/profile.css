@@ -10,7 +10,7 @@
     padding: 0;
     overflow: hidden;
     font-family: dinomiko, sans-serif;
-    font-size: 1.05em;
+    font-size: 1.0em;
     font-weight: 600;
     z-index: 1;
 }
@@ -21,7 +21,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     z-index: 1;
 }
@@ -188,10 +188,6 @@ body {
     z-index: 3;
 }
 
-.login-title {
-    font-size: 2.5em;
-}
-
 .login-form {
     display: flex;
     flex-direction: column;
@@ -276,56 +272,6 @@ body {
 }
 
 footer {
-    gap: .3em;
-    display: flex;
-    overflow: visible;
-    z-index: 3;
-}
-
-.rrss-icon {
-    align-items: center;
-    background-color: #fee6e3;
-    border: 2px solid #111;
-    border-radius: 8px;
-    color: black;
-    cursor: pointer;
-    display: flex;
-    font-family: dinomiko, sans-serif;
-    text-shadow: 2px 2px #000;
-    font-size: 16px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    width: 50%;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    box-shadow: 6px 6px #000;
-    overflow: visible;
-    transform: translate(1px, 1px);
-    transition: box-shadow .3s ease ;
-    z-index: 3;
-}
-
-.rrss-icon:hover {
-    position: relative;
-    box-shadow: none;
-    transform: translate(0, 0);
-}
-
-.rrss-icon:active {
-    background-color: #ffdeda;
-    outline: 0;
-    z-index: 3;
-}
-
-.rrss-icon:hover {
-    outline: 0;
     z-index: 3;
 }
 
@@ -353,20 +299,22 @@ footer {
     }
 
     .content {
-        width: 70vw;
+        width: 90vw;
+        height: 90vh;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .content {
-        width: 800px;
+        width: 1100px;
+        height: 800px;
     }
 }
 
 @media screen and (min-width: 1400px) {
-    .content {
+    /* .content {
         width: 900px;
-    }
+    } */
 }
 
 @keyframes transf-opacity {
