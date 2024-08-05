@@ -295,11 +295,20 @@ input:focus {
     background-color: rgb(255, 179, 170);
 }
 
+.login {
+    display: flex;
+    gap: .5em;
+}
+
 footer {
     gap: .3em;
     display: flex;
     overflow: visible;
     z-index: 3;
+}
+
+.bi-caret-left-square-fill {
+    color: black;
 }
 
 .rrss-icon {
