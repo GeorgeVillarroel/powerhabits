@@ -4,7 +4,7 @@
 }
 
 * {
-    /* outline: 1px solid #000; */
+    /* outline: 1px solid rgb(0, 0, 0); */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom,#BCBCFC, #F2D4E9);
+    background: linear-gradient(to bottom,rgb(188, 188, 252), rgb(242, 212, 233));
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -167,29 +167,34 @@ body {
 }
 
 .title-img {
-    background-image: url(../assets/img/mainlogo.png);
+    display: flex;
+    background-position: center;
     width: 1024px;
-    height: 266px;
+    height: 175px;
+    /* height: 266px; */
     transform: scale(0.4);
     z-index: 3;
 }
 
 .content {
+    position: absolute;
+    top: 40vw;
     width: 90vw;
-    height: 60vh;
+    height: 65vh;
     background-color: rgba(255, 255, 255, 0.404);
-    border: solid 4px #313131cc;
+    border: solid 4px rgba(49, 49, 49, 0.8);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 1rem;
     z-index: 3;
 }
 
 .signup-title {
-    font-size: 3em;
+     font-size: 2em;
+/*     font-size: 3em; */
 }
 
 .signup-form {
@@ -198,35 +203,46 @@ body {
     justify-content: center;
     align-items: center;
     gap: .5em;
-    width: 400px;
+    width: 250px;
+    /* width: 400px; */
     overflow: visible;
     z-index: 3;
 }
 
 .user-input, .password-input, .email-input {
-    border: 15px 15px #000;
-    box-shadow: 1px 1px #000,
-                -1px -1px #000;
+    border: 15px 15px rgb(0, 0, 0);
+    box-shadow: 1px 1px rgb(0, 0, 0),
+                -1px -1px rgb(0, 0, 0);
     width: 100%;
     padding: 0 15px;
     height: 3em;
     border-radius: 20px;
-    font-size: 1.1em;
     z-index: 3;
 }
 
 .user-label, .password-label, .email-label {
-    font-size: 1.2em;
     z-index: 3;
 }
 
-input:focus {
-    outline: 5px solid #ffc7c1;
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: visible;
 }
 
-.input-validation {
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 1);
+.terms-checkbox {
+    overflow: visible;
+    padding: 0.1em;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    outline: 5px solid rgb(254, 229, 225);
+}
+
+input:focus {
+    outline: 5px solid rgb(255, 199, 193);
 }
 
 .buttons {
@@ -237,21 +253,21 @@ input:focus {
     justify-content: space-between;
     align-items: center;
     gap: 5px;
-    width: 400px;
+    width: 250px;
 }
 
 .button {
     align-items: center;
     background-color: rgb(254, 229, 225);
-    border: 2px solid #111;
+    border: 2px solid rgb(17, 17, 17);
     border-radius: 8px;
     color: white;
     cursor: pointer;
     display: flex;
     font-family: dinomiko, sans-serif;
-    text-shadow: 2px 2px #000;
-    font-size: 1.5em;
-    height: 48px;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-size: 1.3em;
+    height: 40px;
     justify-content: center;
     line-height: 24px;
     width: 50%;
@@ -263,7 +279,7 @@ input:focus {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    box-shadow: 6px 6px #000;
+    box-shadow: 6px 6px rgb(0, 0, 0);
     overflow: visible;
     transform: translate(1px, 1px);
     transition: box-shadow .3s ease ;
@@ -287,40 +303,37 @@ input:focus {
     z-index: 3;
 }
 
+.button.login {
+    display: flex;
+    gap: 5px;
+}
+
 .button.signup {
-    background-color: #ffc7c1;
+    background-color: rgb(255, 199, 193);
 }
 
 .button.signup:active {
     background-color: rgb(255, 179, 170);
 }
 
-.login {
-    display: flex;
-    gap: .5em;
-}
-
 footer {
+    width: 350px;
     gap: .3em;
-    display: flex;
+    display: none;
     overflow: visible;
     z-index: 3;
 }
 
-.bi-caret-left-square-fill {
-    color: black;
-}
-
 .rrss-icon {
     align-items: center;
-    background-color: #fee6e3;
-    border: 2px solid #111;
+    background-color: rgb(254, 230, 227);
+    border: 2px solid rgb(17, 17, 17);
     border-radius: 8px;
-    color: black;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     display: flex;
     font-family: dinomiko, sans-serif;
-    text-shadow: 2px 2px #000;
+    text-shadow: 2px 2px rgb(0, 0, 0);
     font-size: 1.5em;
     height: 48px;
     justify-content: center;
@@ -334,7 +347,7 @@ footer {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    box-shadow: 6px 6px #000;
+    box-shadow: 6px 6px rgb(0, 0, 0);
     overflow: visible;
     transform: translate(1px, 1px);
     transition: box-shadow .3s ease ;
@@ -348,7 +361,7 @@ footer {
 }
 
 .rrss-icon:active {
-    background-color: #ffdeda;
+    background-color: rgb(255, 222, 218);
     outline: 0;
     z-index: 3;
 }
@@ -363,14 +376,19 @@ footer {
     height: 25px;
 }
 
-@media (min-width: 768px) {
-    .button-56 {
-        padding: 0 40px;
+@media screen and (min-width: 375px) {
+    .content {
+        position: inherit;
+    }
+
+    .title-img {
+        background-image: url(../assets/img/mainlogo.png);
     }
 }
 
 @media screen and (min-width: 576px) {
     .title-img {
+        height: 266px;
         transform: scale(0.5);
     }
 }
@@ -379,6 +397,53 @@ footer {
     .title-img {
         transform: scale(0.7);
     }
+
+    footer {
+        gap: .3em;
+        display: flex;
+        overflow: visible;
+        z-index: 3;
+    }
+
+    .buttons {
+        display: flex;
+        overflow: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        width: 350px;
+    }
+
+    .button {
+    font-size: 1.5em;
+    height: 48px;
+    }
+
+    .forgot-pw {
+        font-size: 1.3em;
+    }
+
+    
+    .user-label, .password-label, .email-label {
+        font-size: 1.5em;
+    }
+    
+    
+    .user-input, .password-input, .email-input {
+        font-size: 1.1em;
+    }
+    
+    .signup-title {
+        font-size: 3em;
+    }
+
+    .signup-form {
+        width: 350px;
+    }
+
+
 }
 
 @media screen and (min-width: 992px) {

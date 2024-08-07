@@ -10,7 +10,7 @@ function doorCloseEventList() {
     })
 
     logoutButton.addEventListener(`click`, () => {
-        window.location.href = 'index.html';
+        window.location.href = '../index.html';
     })
 }
 

@@ -177,6 +177,8 @@ body {
 }
 
 .content {
+    position: absolute;
+    top: 40vw;
     width: 90vw;
     height: 65vh;
     background-color: rgba(255, 255, 255, 0.404);
@@ -353,14 +355,13 @@ footer {
 }
 
 @media screen and (min-width: 375px) {
+
+    .content {
+        position: inherit;
+    }
+
     .title-img {
         background-image: url(../assets/img/mainlogo.png);
-    }
-}
-
-@media (min-width: 768px) {
-    .button-56 {
-        padding: 0 40px;
     }
 }
 
